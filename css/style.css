@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkred;
+    padding: 20px 0;
+    width: 100%;
+}
+.speler1 {
+    display: inline-flex;
+    padding: 0 30px;
+    justify-items:start;
+    color: yellow;
+}
+.score {
+    display: inline-flex;
+    color:lightseagreen;
+
+}
+.speler2 {
+    display: inline-flex;
+    padding: 0 30px;
+    justify-content: end;
+    color: yellow;
+}
+.spacerow {
+    height: 20px;
+    width: 100%;
+}
+.buttongame {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
+}
+.button {
+    height: 30px;
+    width: 90px;
+    background-color: green;
+    color: white;
+}
+.board {
+    /* background-color: rgb(51, 51, 51); */
+    background-color: rgb(255, 10, 10);
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-gap: 10px;
+
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+.veld {
+    background-color: white;
+
+    width: 160px;
+    height: 160px;
+}
+.xoimage {
+    width: 160px;
+    height: 160px;
+}
+.commentveld {
+    height: 20px;
+    text-align: center;
+    color: yellow;
+}
+
+@media (max-width: 450px) {
+    .board {
+        grid-template-columns: 100px 100px 100px;
+        width: 320px;
+        height: 320px;
+    }
+    .veld {
+        width: 100px;
+        height: 100px;
+    }
+    .xoimage {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta http-equiv="expires" content="0">
+       <title>Tic Tac Toe</title>
+       <link rel="stylesheet" href="css/style.css"> 
+       <script defer src="script/script.js"></script>     
+   </head>
+<body>
+    <!-- Topbar game -->
+    <div class="topbar">
+        <div class="speler1" id="player1">Speler 1</div>
+        <div class="score" id="score">0 - 0</div>
+        <div class="speler2" id="player2">Speler 2</div>
+    </div>
+            <div class="spacerow"></div>        <!-- tussenruimte -->
+
+    <div class="buttongame"><button id="btnnewgame" class="button" onclick="newGame()">New game</button></div>
+
+            <div class="spacerow"></div>        <!-- tussenruimte -->
+
+    <div class="board">
+        <div class="veld" id="veld1" onclick="veld1()"></div>
+        <div class="veld" id="veld2" onclick="veld2()"></div>
+        <div class="veld" id="veld3" onclick="veld3()"></div>
+        <div class="veld" id="veld4" onclick="veld4()"></div>
+        <div class="veld" id="veld5" onclick="veld5()"></div>
+        <div class="veld" id="veld6" onclick="veld6()"></div>
+        <div class="veld" id="veld7" onclick="veld7()"></div>
+        <div class="veld" id="veld8" onclick="veld8()"></div>
+        <div class="veld" id="veld9" onclick="veld9()"></div>
+    </div>
+
+            <div class="spacerow"></div>        <!-- tussenruimte -->
+
+    <!-- commentaar veld tbv interactie spelers -->
+    <div id="tekstveld" class="commentveld">Welkom</div>
+
+
+</body>
+</html>
